@@ -6,7 +6,7 @@ header {
     .header-container {
         height: 100px;
         padding: 0px 25px;
-        @include DisplayFlex(flex, inherit, center);
+        @include DisplayFlex(flex, space-between, center);
 
         .left-cont {
             @include DisplayFlex(flex, inherit, center);
