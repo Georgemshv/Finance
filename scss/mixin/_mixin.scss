@@ -1,0 +1,8 @@
+@mixin DisplayFlex($flex , $justify , $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin Animation($transition , $time){
+    transition: $transition , $time;
+}

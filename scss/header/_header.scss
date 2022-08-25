@@ -1,0 +1,163 @@
+header {
+    /*header background*/
+    background-color: $blue_white;
+    border-bottom: solid 2px #EDEFF2;
+
+    .header-container {
+        height: 100px;
+        padding: 0px 25px;
+        @include DisplayFlex(flex, inherit, center);
+
+        .left-cont {
+            @include DisplayFlex(flex, inherit, center);
+
+            /*burger menu*/
+            .circle {
+                @include DisplayFlex(flex, center, center);
+                width: $size50px;
+                height: $size50px;
+                border-radius: 50%;
+                background-color: $white;
+                /* Shadows/Gray Blue/3%/5b */
+                box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
+            }
+
+            /*constructor*/
+            h4 {
+                font-family: $font_roboto;
+                font-weight: 700;
+                margin-left: 35px;
+                color: #4D5E80;
+            }
+        }
+
+        /*navigation*/
+        .navigation {
+            margin-left: 85px;
+
+            ul {
+                @include DisplayFlex(flex, inherit, center);
+
+                .list {
+                    @include Animation(all, 0.5s);
+
+                    &:not(:nth-child(1)) {
+                        margin-left: 30px;
+                    }
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+
+                    .list-a {
+                        font-family: $font_roboto;
+                        color: #7D8FB3;
+                        font-size: 13px;
+                    }
+                }
+
+                .other {
+                    @include DisplayFlex(flex, center, center);
+                    margin-left: 30px;
+                }
+            }
+        }
+
+        /*input*/
+        .input-container {
+            /* Shadows/Gray Blue/3%/5b */
+
+            box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
+            width: 298px;
+            height: 60px;
+            position: relative;
+            margin-left: 93px;
+
+            .search-image {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 20px;
+            }
+
+            input {
+                width: 100%;
+                height: 100%;
+                /* Shadows/Gray Blue/3%/5b */
+
+                box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
+                border-radius: 30px;
+                padding-left: 60px;
+                font-size: 12px;
+                font-family: $font_roboto;
+                /* Grey Blue 80 */
+
+                color: black;
+
+                &::placeholder {
+                    /* Grey Blue 80 */
+
+                    color: #ADB8CC;
+                }
+            }
+        }
+
+        .account {
+            margin-left: 130px;
+            @include DisplayFlex(flex, inherit, center);
+
+            .account-box {
+                @include DisplayFlex(flex, inherit, center);
+                margin-right: 30px;
+
+                span {
+                    font-family: $font_roboto;
+                    font-size: 13px;
+                    /* Grey Blue 60 */
+
+                    color: #6B7A99;
+                    margin-left: 15px;
+                }
+            }
+
+            .circle_container {
+                /* Shadows/Gray Blue/3%/5b */
+
+                box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
+                cursor: pointer;
+                width: $size50px;
+                height: $size50px;
+                position: relative;
+                @include Animation(all, 0.3s);
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                &:nth-child(2) {
+                    margin-right: 10px;
+                }
+
+                .notification {
+                    width: 10px;
+                    height: 10px;
+                    background-color: #E62E7B;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                }
+
+                .image-notification {
+                    width: $size50px;
+                    height: $size50px;
+                    background-color: $white;
+                    border-radius: 50%;
+                    @include DisplayFlex(flex, center, center)
+                }
+            }
+
+
+        }
+    }
+}
