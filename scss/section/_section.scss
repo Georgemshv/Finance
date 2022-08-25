@@ -16,6 +16,7 @@ section {
                 width: 50px;
                 height: 50px;
                 position: relative;
+                cursor: pointer;
                 /*animation*/
                 @include Animation(all, 0.4s);
 
@@ -59,6 +60,7 @@ section {
 
             .Circle {
                 position: relative;
+                cursor: pointer;
 
                 &:not(:first-child) {
                     margin-top: 22px;
