@@ -4,11 +4,9 @@ section {
 
     .left-navigation {
         width: 100px;
-        height: 100%;
         background-color: $blue_white;
         border-right: solid 2px #EDEFF2;
-        padding-left: 25px;
-        padding-top: 30px;
+        padding: 30px 0px 30px 25px;
 
         .information {
             @include DisplayFlex(flex, initial, initial);
@@ -19,8 +17,9 @@ section {
                 height: 50px;
                 position: relative;
                 /*animation*/
-                @include Animation(all , 0.4s);
-                &:hover{
+                @include Animation(all, 0.4s);
+
+                &:hover {
                     transform: scale(1.2);
                 }
 
@@ -49,6 +48,60 @@ section {
                     width: 50px;
                     height: 50px;
                     border-radius: 50%;
+
+
+                }
+            }
+        }
+
+        .information2 {
+            margin-top: 280px;
+
+            .Circle {
+                position: relative;
+
+                &:not(:first-child) {
+                    margin-top: 22px;
+                }
+
+                width: 50px;
+                height: 50px;
+
+                .Stick {
+                    width: 10px;
+                    height: 10px;
+                    position: absolute;
+                    /* Blue */
+
+                    background: #3361FF;
+                    /* Shadows/Gray Blue/3%/10b */
+
+                    box-shadow: 0px 2px 10px rgba(38, 51, 77, 0.03);
+
+                    top: 0px;
+                    right: 0px;
+                    border-radius: 50%;
+                }
+
+                .CircleBox {
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        @extend .CircleBox;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .otherblock1{
+                .otherblock2{
+                    background-color: white;
+                    border-radius: 50%;
+                    @include DisplayFlex(flex , center , center);
+                    img{
+                        width: 20px;
+                        height: 20px;
+                    }
                 }
             }
         }
