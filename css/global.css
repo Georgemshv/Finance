@@ -63,6 +63,7 @@ body {
 
 html {
   height: 100%;
+  background: #f7f8fa;
 }
 
 @font-face {
@@ -338,6 +339,18 @@ section .card-wrapper .card-info .background-wrapper .cards {
   display: flex;
   justify-content: initial;
   align-items: center;
+  bottom: 13px;
+  left: 30px;
+}
+section .card-wrapper .card-info .background-wrapper .cards .card-image:not(:first-child) {
+  margin-left: 20px;
+}
+section .card-wrapper .card-info .background-wrapper .cards .card-image .sticker {
+  width: 40px;
+  height: 2px;
+  background-color: #FF6633;
+  margin: 0 auto;
+  transform: translateY(8px);
 }
 section .card-wrapper .card-info .background-wrapper .background-pink {
   padding: 32px;
@@ -396,4 +409,40 @@ section .card-wrapper .card-info .background-wrapper .background-pink .Mastercar
   font-family: "Roboto-Font";
   font-size: 14px;
   color: white;
+}
+section .card-wrapper .card-info .dolar-section {
+  width: 350px;
+  height: 730px;
+  /* White */
+  background: #FFFFFF;
+  /* Shadows/Gray Blue/3%/5b */
+  box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
+  border-radius: 10px;
+}
+section .card-wrapper .card-info .dolar-section .top-cont {
+  padding: 21px 44px 24px 32px;
+  border-bottom: solid 2px #F5F6F7;
+}
+section .card-wrapper .card-info .dolar-section .top-cont ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .card-wrapper .card-info .dolar-section .top-cont ul li {
+  font-size: 12px;
+  font-family: "Roboto-Font";
+  font-weight: 900;
+  /* Grey Blue 70 */
+  color: #7D8FB3;
+}
+section .card-wrapper .card-info .dolar-section .top-cont ul li:nth-child(1) {
+  /* Purple */
+  color: #8833FF;
+}
+section .card-wrapper .card-info .dolar-section .top-cont ul li .click-event {
+  /* Purple */
+  background: #8833FF;
+  height: 2.11px;
+  border-radius: 1px;
+  transform: translateY(25.5px);
 }/*# sourceMappingURL=global.css.map */

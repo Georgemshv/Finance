@@ -1,0 +1,147 @@
+.card-wrapper {
+    .card-info {
+        padding-left: 30px;
+        padding-top: 30px;
+
+        .background-wrapper {
+            width: 350px;
+            height: 245px;
+            position: relative;
+
+            .cards {
+                position: absolute;
+                @include DisplayFlex(flex, initial, center);
+                bottom: 13px;
+                left: 30px;
+
+                .card-image {
+                    &:not(:first-child) {
+                        margin-left: 20px;
+                    }
+
+                    .sticker {
+                        width: 40px;
+                        height: 2px;
+                        background-color: $orange;
+                        margin: 0 auto;
+                        transform: translateY(8px);
+                    }
+                }
+            }
+
+            .background-pink {
+                padding: 32px;
+                width: 100%;
+                height: 210px;
+                background: linear-gradient(196.77deg, #FF46AA 0.6%, #FDF37A 136.46%);
+                box-shadow: inset 0px 1px 63px rgba(244, 239, 255, 0.2);
+                border-radius: 10px;
+
+                .bank {
+
+                    @include DisplayFlex(flex, space-between, center);
+
+                    h5 {
+                        font-size: 30px;
+                        font-family: $font_roboto;
+                        color: white;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        font-family: $font_roboto;
+                        color: white;
+                    }
+                }
+
+                .level {
+                    padding-top: 30px;
+                    @include DisplayFlex(flex, initial, center);
+
+                    .squad {
+                        &:not(:first-child) {
+                            margin-left: 10px;
+                        }
+
+                        span {
+                            background-color: white;
+                            width: 5px;
+                            height: 5px;
+                            border-radius: 50%;
+                            display: inline-block;
+                            margin-left: 2px;
+                        }
+                    }
+
+                    div {
+
+                        p {
+                            padding-top: 5px;
+                            color: white;
+                            font-family: $font_roboto;
+                            font-size: 16px;
+                            margin-left: 15px;
+                        }
+                    }
+                }
+
+                .Mastercard {
+                    @include DisplayFlex(flex, space-between, center);
+                    padding-top: 33px;
+
+                    p {
+                        font-family: $font_roboto;
+                        font-size: 14px;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .dolar-section {
+            width: 350px;
+            height: 730px;
+            /* White */
+
+            background: #FFFFFF;
+            /* Shadows/Gray Blue/3%/5b */
+
+            box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
+            border-radius: 10px;
+
+            .top-cont {
+                padding: 21px 44px 24px 32px;
+                border-bottom: solid 2px #F5F6F7;;
+
+                ul {
+                    @include DisplayFlex(flex, space-between, center);
+
+                    li {
+                        font-size: 12px;
+                        font-family: $font_roboto;
+                        font-weight: 900;
+                        /* Grey Blue 70 */
+
+                        color: #7D8FB3;
+
+                        &:nth-child(1) {
+                            /* Purple */
+
+                            color: #8833FF;
+                        }
+
+                        .click-event {
+                            /* Purple */
+
+                            background: #8833FF;
+                            height: 2.11px;
+                            border-radius: 1px;
+                            transform: translateY(25.5px);
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
