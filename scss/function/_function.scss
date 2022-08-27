@@ -1,0 +1,6 @@
+@function setBackground($color){
+    @return $color;
+};
+@function setColor($color){
+    @return $color
+}

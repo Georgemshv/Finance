@@ -236,19 +236,20 @@ section {
   justify-content: initial;
   align-items: initial;
 }
-section div .left-navigation {
+
+.left-navigation {
   width: 100px;
   background-color: #f7f8fa;
   border-right: solid 2px #EDEFF2;
   padding: 30px 0px 30px 25px;
 }
-section div .left-navigation .information {
+.left-navigation .information {
   display: flex;
   justify-content: initial;
   align-items: initial;
   flex-direction: column;
 }
-section div .left-navigation .information .circles {
+.left-navigation .information .circles {
   width: 50px;
   height: 50px;
   position: relative;
@@ -256,13 +257,13 @@ section div .left-navigation .information .circles {
   /*animation*/
   transition: all, 0.4s;
 }
-section div .left-navigation .information .circles:hover {
+.left-navigation .information .circles:hover {
   transform: scale(1.2);
 }
-section div .left-navigation .information .circles:not(:first-child) {
+.left-navigation .information .circles:not(:first-child) {
   margin-top: 20px;
 }
-section div .left-navigation .information .circles .stick {
+.left-navigation .information .circles .stick {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -271,7 +272,7 @@ section div .left-navigation .information .circles .stick {
   right: 0px;
   border-radius: 50%;
 }
-section div .left-navigation .information .circles .circle2 {
+.left-navigation .information .circles .circle2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -283,19 +284,19 @@ section div .left-navigation .information .circles .circle2 {
   height: 50px;
   border-radius: 50%;
 }
-section div .left-navigation .information2 {
+.left-navigation .information2 {
   margin-top: 280px;
 }
-section div .left-navigation .information2 .Circle {
+.left-navigation .information2 .Circle {
   position: relative;
   cursor: pointer;
   width: 50px;
   height: 50px;
 }
-section div .left-navigation .information2 .Circle:not(:first-child) {
+.left-navigation .information2 .Circle:not(:first-child) {
   margin-top: 22px;
 }
-section div .left-navigation .information2 .Circle .Stick {
+.left-navigation .information2 .Circle .Stick {
   width: 10px;
   height: 10px;
   position: absolute;
@@ -307,34 +308,35 @@ section div .left-navigation .information2 .Circle .Stick {
   right: 0px;
   border-radius: 50%;
 }
-section div .left-navigation .information2 .Circle .CircleBox, section div .left-navigation .information2 .Circle .CircleBox img {
+.left-navigation .information2 .Circle .CircleBox, .left-navigation .information2 .Circle .CircleBox img {
   width: 100%;
   height: 100%;
 }
-section div .left-navigation .information2 .Circle .CircleBox img {
+.left-navigation .information2 .Circle .CircleBox img {
   border-radius: 50%;
 }
-section div .left-navigation .information2 .otherblock1 .otherblock2 {
+.left-navigation .information2 .otherblock1 .otherblock2 {
   background-color: white;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section div .left-navigation .information2 .otherblock1 .otherblock2 img {
+.left-navigation .information2 .otherblock1 .otherblock2 img {
   width: 20px;
   height: 20px;
 }
-section .card-wrapper .card-info {
+
+.card-wrapper .card-info {
   padding-left: 30px;
   padding-top: 30px;
 }
-section .card-wrapper .card-info .background-wrapper {
+.card-wrapper .card-info .background-wrapper {
   width: 350px;
   height: 245px;
   position: relative;
 }
-section .card-wrapper .card-info .background-wrapper .cards {
+.card-wrapper .card-info .background-wrapper .cards {
   position: absolute;
   display: flex;
   justify-content: initial;
@@ -342,17 +344,17 @@ section .card-wrapper .card-info .background-wrapper .cards {
   bottom: 13px;
   left: 30px;
 }
-section .card-wrapper .card-info .background-wrapper .cards .card-image:not(:first-child) {
+.card-wrapper .card-info .background-wrapper .cards .card-image:not(:first-child) {
   margin-left: 20px;
 }
-section .card-wrapper .card-info .background-wrapper .cards .card-image .sticker {
+.card-wrapper .card-info .background-wrapper .cards .card-image .sticker {
   width: 40px;
   height: 2px;
   background-color: #FF6633;
   margin: 0 auto;
   transform: translateY(8px);
 }
-section .card-wrapper .card-info .background-wrapper .background-pink {
+.card-wrapper .card-info .background-wrapper .background-pink {
   padding: 32px;
   width: 100%;
   height: 210px;
@@ -360,31 +362,31 @@ section .card-wrapper .card-info .background-wrapper .background-pink {
   box-shadow: inset 0px 1px 63px rgba(244, 239, 255, 0.2);
   border-radius: 10px;
 }
-section .card-wrapper .card-info .background-wrapper .background-pink .bank {
+.card-wrapper .card-info .background-wrapper .background-pink .bank {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-section .card-wrapper .card-info .background-wrapper .background-pink .bank h5 {
+.card-wrapper .card-info .background-wrapper .background-pink .bank h5 {
   font-size: 30px;
   font-family: "Roboto-Font";
-  color: white;
+  color: White;
 }
-section .card-wrapper .card-info .background-wrapper .background-pink .bank p {
+.card-wrapper .card-info .background-wrapper .background-pink .bank p {
   font-size: 14px;
   font-family: "Roboto-Font";
   color: white;
 }
-section .card-wrapper .card-info .background-wrapper .background-pink .level {
+.card-wrapper .card-info .background-wrapper .background-pink .level {
   padding-top: 30px;
   display: flex;
   justify-content: initial;
   align-items: center;
 }
-section .card-wrapper .card-info .background-wrapper .background-pink .level .squad:not(:first-child) {
+.card-wrapper .card-info .background-wrapper .background-pink .level .squad:not(:first-child) {
   margin-left: 10px;
 }
-section .card-wrapper .card-info .background-wrapper .background-pink .level .squad span {
+.card-wrapper .card-info .background-wrapper .background-pink .level .squad span {
   background-color: white;
   width: 5px;
   height: 5px;
@@ -392,57 +394,110 @@ section .card-wrapper .card-info .background-wrapper .background-pink .level .sq
   display: inline-block;
   margin-left: 2px;
 }
-section .card-wrapper .card-info .background-wrapper .background-pink .level div p {
+.card-wrapper .card-info .background-wrapper .background-pink .level div p {
   padding-top: 5px;
   color: white;
   font-family: "Roboto-Font";
   font-size: 16px;
   margin-left: 15px;
 }
-section .card-wrapper .card-info .background-wrapper .background-pink .Mastercard {
+.card-wrapper .card-info .background-wrapper .background-pink .Mastercard {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 33px;
 }
-section .card-wrapper .card-info .background-wrapper .background-pink .Mastercard p {
+.card-wrapper .card-info .background-wrapper .background-pink .Mastercard p {
   font-family: "Roboto-Font";
   font-size: 14px;
   color: white;
 }
-section .card-wrapper .card-info .dolar-section {
+.card-wrapper .card-info .dolar-section {
+  margin-top: 40px;
   width: 350px;
   height: 730px;
   /* White */
-  background: #FFFFFF;
+  background: white;
   /* Shadows/Gray Blue/3%/5b */
   box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
   border-radius: 10px;
 }
-section .card-wrapper .card-info .dolar-section .top-cont {
+.card-wrapper .card-info .dolar-section .top-cont {
   padding: 21px 44px 24px 32px;
   border-bottom: solid 2px #F5F6F7;
 }
-section .card-wrapper .card-info .dolar-section .top-cont ul {
+.card-wrapper .card-info .dolar-section .top-cont ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-section .card-wrapper .card-info .dolar-section .top-cont ul li {
+.card-wrapper .card-info .dolar-section .top-cont ul li {
   font-size: 12px;
   font-family: "Roboto-Font";
   font-weight: 900;
   /* Grey Blue 70 */
   color: #7D8FB3;
 }
-section .card-wrapper .card-info .dolar-section .top-cont ul li:nth-child(1) {
+.card-wrapper .card-info .dolar-section .top-cont ul li:nth-child(1) {
   /* Purple */
   color: #8833FF;
 }
-section .card-wrapper .card-info .dolar-section .top-cont ul li .click-event {
+.card-wrapper .card-info .dolar-section .top-cont ul li .click-event {
   /* Purple */
   background: #8833FF;
   height: 2.11px;
   border-radius: 1px;
   transform: translateY(25.5px);
+}
+.card-wrapper .card-info .dolar-section .money {
+  padding-top: 27px;
+}
+.card-wrapper .card-info .dolar-section .money .money-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 2px #F5F6F7;
+}
+.card-wrapper .card-info .dolar-section .money .money-container:not(:first-child) {
+  padding-top: 20px;
+}
+.card-wrapper .card-info .dolar-section .money .money-container:last-child {
+  border: none;
+}
+.card-wrapper .card-info .dolar-section .money .money-container .textwrapper {
+  width: 160px;
+}
+.card-wrapper .card-info .dolar-section .money .money-container .textwrapper span {
+  font-size: 10px;
+  color: #7D8FB3;
+  font-family: "Roboto-Font";
+}
+.card-wrapper .card-info .dolar-section .money .money-container .textwrapper h4 {
+  font-size: 13px;
+  font-family: "Roboto-Font";
+  color: #4D5E80;
+  margin-top: 15px;
+}
+.card-wrapper .card-info .dolar-section .money .money-container .mon {
+  width: 51px;
+  height: 30px;
+  background: #F7F8FA;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto-Font";
+  font-weight: bolder;
+  font-size: 12px;
+  color: #6B7A99;
+}
+.card-wrapper .card-info .dolar-section .money .money-container .plus {
+  background: rgba(41, 204, 57, 0.1);
+  color: #29CC39;
+}
+.card-wrapper .card-info .dolar-section .money .money-container .plus1000 {
+  width: 60px;
 }/*# sourceMappingURL=global.css.map */
