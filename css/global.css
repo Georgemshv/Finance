@@ -327,6 +327,11 @@ section {
   height: 20px;
 }
 
+.card-wrapper {
+  display: flex;
+  justify-content: initial;
+  align-items: initial;
+}
 .card-wrapper .card-info {
   padding-left: 30px;
   padding-top: 30px;
@@ -500,4 +505,218 @@ section {
 }
 .card-wrapper .card-info .dolar-section .money .money-container .plus1000 {
   width: 60px;
+}
+
+.card-info-big {
+  padding-top: 30px;
+}
+.card-info-big .center-div {
+  width: 730px;
+  height: 445px;
+  background-color: white;
+  margin-left: 30px;
+  /* Shadows/Gray Blue/3%/5b */
+  box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
+  border-radius: 10px;
+}
+.card-info-big .center-div .header {
+  padding: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 2px #F5F6F7;
+}
+.card-info-big .center-div .header .left-header, .card-info-big .center-div .header .right-header {
+  width: 40px;
+  height: 40px;
+  /* Grey Blue 97 */
+  border: 2px solid #F5F6F7;
+  /* Shadows/Gray Blue/3%/5b */
+  box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-info-big .center-div .header .center-ul {
+  display: flex;
+  justify-content: initial;
+  align-items: center;
+}
+.card-info-big .center-div .header .center-ul li {
+  font-family: "Roboto-Font";
+  font-size: 12px;
+}
+.card-info-big .center-div .header .center-ul li:first-child {
+  margin-right: 25px;
+  color: #8833FF;
+}
+.card-info-big .center-div .header .center-ul li:last-child {
+  margin-left: 25px;
+  color: #7D8FB3;
+}
+.card-info-big .center-div .header .center-ul li .stick {
+  height: 2px;
+  background: #8833FF;
+  transform: translateY(29px);
+}
+.card-info-big .center-div .circle-container-relative {
+  padding: 50px 50px 0px 50px;
+  margin-top: 32px;
+  border-bottom: solid 2px #F5F6F7;
+}
+.card-info-big .center-div .circle-container-relative .elements {
+  display: flex;
+  justify-content: initial;
+  align-items: flex-end;
+  height: 230px;
+}
+.card-info-big .center-div .circle-container-relative .elements .containers {
+  position: relative;
+}
+.card-info-big .center-div .circle-container-relative .elements .containers .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-info-big .center-div .circle-container-relative .elements .containers .flex span {
+  color: #EDDFFF;
+  font-family: "Roboto-Font";
+  font-weight: bolder;
+  font-size: 24px;
+}
+.card-info-big .center-div .circle-container-relative .elements .containers .bubble {
+  top: -80px;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  background: linear-gradient(180deg, #FFBE00 0%, #FF8F00 100%);
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  border-radius: 50%;
+  box-shadow: 0px 22px 74px rgba(254, 208, 24, 0.8), inset 0px 10px 21px #FFEFAB;
+}
+.card-info-big .center-div .circle-container-relative .elements .containers .bubble2 {
+  top: -100px;
+  position: absolute;
+  width: 180px;
+  border-radius: 50%;
+  height: 180px;
+  background: linear-gradient(180deg, #F7136C 0%, #FF6300 100%);
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  box-shadow: 0px 30px 48px rgba(255, 6, 58, 0.3), inset 0px 0px 63px rgba(255, 189, 222, 0.5);
+}
+.card-info-big .center-div .circle-container-relative .elements .containers .bubble3 {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #9238FF 0%, #9253FF 100%);
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  box-shadow: 0px 22px 34px rgba(197, 69, 249, 0.5), inset 0px 4px 23px rgba(235, 170, 255, 0.7);
+  width: 130px;
+  height: 130px;
+  z-index: 5;
+  top: -80px;
+  right: -38px;
+}
+.card-info-big .center-div .circle-container-relative .elements .containers .bubble4 {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #00DBFC 0%, #4300FF 100%);
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  box-shadow: 0px 30px 34px rgba(29, 155, 254, 0.15), inset 0px 0px 63px rgba(180, 220, 255, 0.5);
+  width: 130px;
+  height: 130px;
+  top: -76px;
+  z-index: 7;
+}
+.card-info-big .center-div .circle-container-relative .elements .containers .bubble5 {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 6;
+  background: linear-gradient(180deg, #09B680 0%, #04B58A 100%);
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  box-shadow: 0px 22px 34px rgba(41, 218, 61, 0.56), inset 0px 11px 43px #AFFFB3;
+  width: 120px;
+  height: 120px;
+  top: -45px;
+  right: -33px;
+}
+.card-info-big .center-div .circle-container-relative .elements .containers .bubble6 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  background: linear-gradient(180deg, #FF7900 0%, #FF7300 95.78%);
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  box-shadow: 0px 22px 35px rgba(254, 144, 41, 0.4), inset 0px 11px 33px #FED06D;
+  top: -50px;
+}
+.card-info-big .center-div .circle-container-relative .elements .containers .box {
+  width: 110px;
+  height: 184px;
+  background: linear-gradient(180deg, rgba(255, 199, 33, 0.0001) 0%, #FFC721 43.09%, #FEC11D 100%);
+  mix-blend-mode: normal;
+  opacity: 0.2;
+}
+.card-info-big .center-div .circle-container-relative .elements .containers .box2 {
+  background: #E64683;
+  mix-blend-mode: normal;
+  opacity: 0.1;
+  width: 179px;
+  height: 140px;
+  opacity: 0.2;
+}
+.card-info-big .center-div .circle-container-relative .elements .containers .box3 {
+  width: 53px;
+  height: 189px;
+  background: #A55FFE;
+  mix-blend-mode: normal;
+  opacity: 0.2;
+}
+.card-info-big .center-div .circle-container-relative .elements .containers .box4 {
+  width: 130px;
+  height: 126px;
+  background: #37C9F6;
+  mix-blend-mode: normal;
+  opacity: 0.2;
+}
+.card-info-big .center-div .circle-container-relative .elements .containers .box5 {
+  width: 58px;
+  height: 189px;
+  background: #33DC47;
+  mix-blend-mode: normal;
+  opacity: 0.2;
+}
+.card-info-big .center-div .circle-container-relative .elements .containers .box6 {
+  width: 100px;
+  height: 120px;
+  background: linear-gradient(180deg, rgba(255, 165, 66, 0.0001) 0%, #FFA542 17.23%, #FF922F 100%);
+  mix-blend-mode: normal;
+  opacity: 0.2;
+}
+.card-info-big .center-div .lists {
+  display: flex;
+  justify-content: center;
+  align-items: initial;
+}
+.card-info-big .center-div .lists .ul_container {
+  width: 590px;
+  padding-top: 17px;
+}
+.card-info-big .center-div .lists .ul_container ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-info-big .center-div .lists .ul_container ul li {
+  font-size: 12px;
+  /* Grey Blue 70 */
+  color: #7D8FB3;
+  font-family: "Roboto-Font";
+  font-weight: 700;
 }/*# sourceMappingURL=global.css.map */
