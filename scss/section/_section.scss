@@ -1,5 +1,5 @@
 /*Start Section*/
 section {
-    height: 100%;
     @include DisplayFlex(flex, initial, initial);
+    justify-content: space-between;
 }

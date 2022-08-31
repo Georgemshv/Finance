@@ -231,10 +231,10 @@ header .header-container .account .circle_container .image-notification {
 
 /*Start Section*/
 section {
-  height: 100%;
   display: flex;
   justify-content: initial;
   align-items: initial;
+  justify-content: space-between;
 }
 
 .left-navigation {
@@ -531,7 +531,7 @@ section {
   height: 40px;
   /* Grey Blue 97 */
   border: 2px solid #F5F6F7;
-  /* Shadows/Gray Blue/3%/5b */
+  /* Shadows/Gray Blue/3%/5b  */
   box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
   border-radius: 50%;
   display: flex;
@@ -719,4 +719,112 @@ section {
   color: #7D8FB3;
   font-family: "Roboto-Font";
   font-weight: 700;
+}
+.card-info-big .news {
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.card-info-big .news .company-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: initial;
+}
+.card-info-big .news .company-images:last-child {
+  padding-top: 14px;
+}
+
+.Account {
+  width: 330px;
+  background-color: #f7f8fa;
+  margin-left: 30px;
+  border-left: solid 2px #EDEFF2;
+  padding-top: 30px;
+}
+.Account .headerBox {
+  padding-left: 39px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Account .profile-picture {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.Account .profile-picture .circlePlus {
+  position: absolute;
+  /* Orange */
+  background: #FF6633;
+  /* Shadows/Orange/10%/30b */
+  box-shadow: 0px 10px 30px rgba(255, 102, 51, 0.1);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 75px;
+}
+.Account .profile-picture .profile-wrapper {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 2px solid #8833FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Account .profile-picture .profile-wrapper img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+.Account .h3 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 40px;
+  font-family: "Roboto-Font";
+  color: #6B7A99;
+}
+.Account .accWcards {
+  padding-top: 40px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+.Account .accWcards .accs, .Account .accWcards .carts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Account .accWcards .accs p, .Account .accWcards .carts p {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Roboto-Font";
+  color: #6B7A99;
+}
+.Account .accWcards .accs p:last-child, .Account .accWcards .carts p:last-child {
+  margin-top: 5px;
+}
+.Account .accWcards .carts {
+  margin-top: 20px;
+}
+.Account .accWcards .carts:first-child {
+  margin-top: 30px;
+}
+.Account .accWcards .carts .txt {
+  margin-right: 30px;
+}
+.Account .accWcards .carts .arrow {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  /* Shadows/Gray Blue/3%/5b */
+  box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=global.css.map */
