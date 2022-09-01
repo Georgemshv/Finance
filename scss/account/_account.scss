@@ -71,7 +71,8 @@
                 font-weight: bold;
                 font-family: $font_roboto;
                 color: #6B7A99;
-                &:last-child{
+
+                &:last-child {
                     margin-top: 5px
                 }
 
@@ -85,7 +86,8 @@
             &:first-child {
                 margin-top: 30px;
             }
-            .txt{
+
+            .txt {
                 margin-right: 30px;
             }
 
@@ -97,8 +99,71 @@
                 /* Shadows/Gray Blue/3%/5b */
 
                 box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
-                @include DisplayFlex(flex , center , center)
+                @include DisplayFlex(flex, center, center)
             }
+        }
+    }
+
+    .setting {
+        margin-top: 42px;
+        padding-right: 32px;
+        padding-left: 32px;
+
+        .accs {
+            @include DisplayFlex(flex, space-between, center);
+
+            p {
+                font-size: 12px;
+                font-weight: bold;
+                font-family: "Roboto-Font";
+                color: #6B7A99;
+            }
+        }
+
+        .personal_account {
+            padding-top: 35px;
+
+            .p-box {
+                @include DisplayFlex(flex, initial, center);
+
+                &:not(:first-child) {
+                    margin-top: 20px;
+                }
+
+                .circle-st {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    /* White */
+
+                    background: #FFFFFF;
+                    /* Shadows/Gray Blue/3%/5b */
+
+                    box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
+                    @include DisplayFlex(flex, center, center)
+                }
+
+                p {
+                    margin-left: 20px;
+                    color: #6B7A99;
+                    font-size: 12px;
+                    font-weight: bold;
+                    font-family: $font_roboto;
+                }
+            }
+        }
+    }
+
+    .last {
+        @include DisplayFlex(flex , center , center);
+        .lastbox {
+            width: 270px;
+            height: 200px;
+            background: #FEB35F;
+            mix-blend-mode: normal;
+            opacity: 0.2;
+            border-radius: 10px;
+            margin-top: 20px;
         }
     }
 }

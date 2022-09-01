@@ -827,4 +827,64 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.Account .setting {
+  margin-top: 42px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+.Account .setting .accs, .Account .setting .accWcards .carts, .Account .accWcards .setting .carts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Account .setting .accs p, .Account .setting .accWcards .carts p, .Account .accWcards .setting .carts p {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Roboto-Font";
+  color: #6B7A99;
+}
+.Account .setting .personal_account {
+  padding-top: 35px;
+}
+.Account .setting .personal_account .p-box {
+  display: flex;
+  justify-content: initial;
+  align-items: center;
+}
+.Account .setting .personal_account .p-box:not(:first-child) {
+  margin-top: 20px;
+}
+.Account .setting .personal_account .p-box .circle-st {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* White */
+  background: #FFFFFF;
+  /* Shadows/Gray Blue/3%/5b */
+  box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Account .setting .personal_account .p-box p {
+  margin-left: 20px;
+  color: #6B7A99;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Roboto-Font";
+}
+.Account .last {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Account .last .lastbox {
+  width: 270px;
+  height: 200px;
+  background: #FEB35F;
+  mix-blend-mode: normal;
+  opacity: 0.2;
+  border-radius: 10px;
+  margin-top: 20px;
 }/*# sourceMappingURL=global.css.map */
