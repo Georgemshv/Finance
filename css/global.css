@@ -140,7 +140,6 @@ header .header-container .navigation ul .other {
 }
 header .header-container .input-container {
   /* Shadows/Gray Blue/3%/5b */
-  box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
   width: 298px;
   height: 60px;
   position: relative;
@@ -197,7 +196,6 @@ header .header-container .account .account-box span {
 }
 header .header-container .account .circle_container {
   /* Shadows/Gray Blue/3%/5b */
-  box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
   cursor: pointer;
   width: 50px;
   height: 50px;
@@ -227,6 +225,7 @@ header .header-container .account .circle_container .image-notification {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
 }
 
 /*Start Section*/
@@ -882,9 +881,68 @@ section {
 .Account .last .lastbox {
   width: 270px;
   height: 200px;
-  background: #FEB35F;
+  background: rgba(254, 180, 95, 0.4431372549);
   mix-blend-mode: normal;
-  opacity: 0.2;
+  /*opacity: 0.2;*/
   border-radius: 10px;
   margin-top: 20px;
+  padding-top: 30px;
+}
+.Account .last .lastbox .call {
+  display: flex;
+  justify-content: center;
+}
+.Account .last .lastbox .textwrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Account .last .lastbox .textwrapper p {
+  font-size: 12px;
+  font-family: "Roboto-Font";
+  font-weight: 700;
+}
+.Account .last .lastbox .textwrapper p:first-child {
+  margin-top: 24px;
+  /* Orange */
+  color: #FF6633;
+}
+.Account .last .lastbox .textwrapper p:last-child {
+  margin-top: 10px;
+  /* Purple */
+  color: #8833FF;
+}
+
+.chat {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(90, 180, 221);
+  position: fixed;
+  z-index: 1000;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+.chat img {
+  width: 40px;
+}
+
+/*custom scrollbar*/
+body::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(126, 126, 126, 0.4);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #e78632;
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.3) 20%, transparent 20%, transparent 40%, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.3) 60%, transparent 60%, transparent 80%, rgba(255, 255, 255, 0.3) 80%);
+  border-radius: 10px;
 }/*# sourceMappingURL=global.css.map */

@@ -155,15 +155,48 @@
     }
 
     .last {
-        @include DisplayFlex(flex , center , center);
+        @include DisplayFlex(flex, center, center);
+
         .lastbox {
             width: 270px;
             height: 200px;
-            background: #FEB35F;
+            background: #feb45f71;
             mix-blend-mode: normal;
-            opacity: 0.2;
+            /*opacity: 0.2;*/
             border-radius: 10px;
             margin-top: 20px;
+            padding-top: 30px;
+
+            .call {
+                display: flex;
+                justify-content: center;
+            }
+
+            .textwrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                p {
+                    font-size: 12px;
+                    font-family: $font_roboto;
+                    font-weight: 700;
+
+                    &:first-child {
+                        margin-top: 24px;
+                        /* Orange */
+
+                        color: #FF6633;
+                    }
+
+                    &:last-child {
+                        margin-top: 10px;
+                        /* Purple */
+
+                        color: #8833FF;
+                    }
+                }
+            }
         }
     }
 }

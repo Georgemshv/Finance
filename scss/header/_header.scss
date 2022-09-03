@@ -67,7 +67,7 @@ header {
         .input-container {
             /* Shadows/Gray Blue/3%/5b */
 
-            box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
+          
             width: 298px;
             height: 60px;
             position: relative;
@@ -122,8 +122,6 @@ header {
 
             .circle_container {
                 /* Shadows/Gray Blue/3%/5b */
-
-                box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
                 cursor: pointer;
                 width: $size50px;
                 height: $size50px;
@@ -153,7 +151,8 @@ header {
                     height: $size50px;
                     background-color: $white;
                     border-radius: 50%;
-                    @include DisplayFlex(flex, center, center)
+                    @include DisplayFlex(flex, center, center);
+                    box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
                 }
             }
 
