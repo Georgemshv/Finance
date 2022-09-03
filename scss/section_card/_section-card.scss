@@ -1,8 +1,43 @@
 .card-wrapper {
     @include DisplayFlex(flex , initial , initial);
+    @media screen and (max-width: 2560px) {
+        width: 90%;
+        justify-content: space-evenly;
+    }
+    @media screen and (max-width: 1920px){
+        width: auto;
+    }
+    @media screen and (max-width: 1550px){
+        width: 70%;
+    }
+    @media screen and (max-width: 1400px){
+        transform: scale(0.9) translateY(-100px);
+    }
+    @media screen and (max-width: 920px){
+        transform: translateY(-0px);
+        padding-top: 13px;
+    }
     .card-info {
         padding-left: 30px;
         padding-top: 30px;
+        @media  screen  and (max-width: 1550px){
+            transform: scale(0.9);
+            padding: 0px;
+        }
+        @media screen and (max-width: 1450px){
+            transform: scale(0.8);
+        }
+        @media screen and (max-width: 1366px){
+            transform: scale(0.8) translateX(100px);
+            
+        }
+        @media screen and (max-width: 1220px){
+            display: none;
+        }
+        @media screen and (max-width: 920px){
+            display: block;
+            transform: scale(1);
+        }
 
         .background-wrapper {
             width: 350px;

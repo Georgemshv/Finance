@@ -94,6 +94,11 @@ header .header-container {
   /*navigation*/
   /*input*/
 }
+@media screen and (max-width: 1400px) {
+  header .header-container {
+    height: 72px;
+  }
+}
 header .header-container .left-cont {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,8 +136,18 @@ header .header-container .left-cont h4 {
   margin-left: 35px;
   color: #4D5E80;
 }
+@media (max-width: 920px) {
+  header .header-container .left-cont h4 {
+    margin-left: 10px;
+  }
+}
 header .header-container .navigation {
   margin-left: 85px;
+}
+@media (max-width: 1220px) {
+  header .header-container .navigation {
+    display: none;
+  }
 }
 header .header-container .navigation ul {
   display: -webkit-box;
@@ -179,6 +194,11 @@ header .header-container .input-container {
   height: 60px;
   position: relative;
   margin-left: 93px;
+}
+@media screen and (max-width: 920px) {
+  header .header-container .input-container {
+    display: none;
+  }
 }
 header .header-container .input-container .search-image {
   position: absolute;
@@ -244,12 +264,22 @@ header .header-container .account .account-box {
           align-items: center;
   margin-right: 30px;
 }
+@media (max-width: 920px) {
+  header .header-container .account .account-box {
+    margin-right: 0px;
+  }
+}
 header .header-container .account .account-box span {
   font-family: "Roboto-Font";
   font-size: 13px;
   /* Grey Blue 60 */
   color: #6B7A99;
   margin-left: 15px;
+}
+@media (max-width: 920px) {
+  header .header-container .account .account-box span {
+    display: none;
+  }
 }
 header .header-container .account .circle_container {
   /* Shadows/Gray Blue/3%/5b */
@@ -293,6 +323,11 @@ header .header-container .account .circle_container .image-notification {
   -webkit-box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
           box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
 }
+@media screen and (max-width: 920px) {
+  header .header-container .account .circle_container {
+    display: none;
+  }
+}
 
 /*Start Section*/
 section {
@@ -309,12 +344,45 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 920px) {
+  section {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 50px;
+  }
+}
 
 .left-navigation {
   width: 100px;
   background-color: #f7f8fa;
   border-right: solid 2px #EDEFF2;
   padding: 30px 0px 30px 25px;
+}
+@media screen and (max-width: 2560px) {
+  .left-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 90vh;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .left-navigation {
+    height: auto;
+  }
+}
+@media screen and (max-width: 920px) {
+  .left-navigation {
+    display: none;
+  }
 }
 .left-navigation .information {
   display: -webkit-box;
@@ -356,6 +424,11 @@ section {
   right: 0px;
   border-radius: 50%;
 }
+@media screen and (max-width: 1400px) {
+  .left-navigation .information .circles {
+    margin-top: 10px;
+  }
+}
 .left-navigation .information .circles .circle2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -374,6 +447,15 @@ section {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+@media screen and (max-width: 1400px) {
+  .left-navigation .information .circles .circle2 {
+    width: 40px;
+    height: 40px;
+  }
+  .left-navigation .information .circles .circle2:not(:first-child) {
+    margin-top: 10px;
+  }
 }
 .left-navigation .information2 {
   margin-top: 280px;
@@ -436,9 +518,71 @@ section {
       -ms-flex-align: initial;
           align-items: initial;
 }
+@media screen and (max-width: 2560px) {
+  .card-wrapper {
+    width: 90%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .card-wrapper {
+    width: auto;
+  }
+}
+@media screen and (max-width: 1550px) {
+  .card-wrapper {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .card-wrapper {
+    -webkit-transform: scale(0.9) translateY(-100px);
+            transform: scale(0.9) translateY(-100px);
+  }
+}
+@media screen and (max-width: 920px) {
+  .card-wrapper {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    padding-top: 13px;
+  }
+}
 .card-wrapper .card-info {
   padding-left: 30px;
   padding-top: 30px;
+}
+@media screen and (max-width: 1550px) {
+  .card-wrapper .card-info {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .card-wrapper .card-info {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+@media screen and (max-width: 1366px) {
+  .card-wrapper .card-info {
+    -webkit-transform: scale(0.8) translateX(100px);
+            transform: scale(0.8) translateX(100px);
+  }
+}
+@media screen and (max-width: 1220px) {
+  .card-wrapper .card-info {
+    display: none;
+  }
+}
+@media screen and (max-width: 920px) {
+  .card-wrapper .card-info {
+    display: block;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 .card-wrapper .card-info .background-wrapper {
   width: 350px;
@@ -660,6 +804,24 @@ section {
 .card-info-big {
   padding-top: 30px;
 }
+@media screen and (max-width: 1550px) {
+  .card-info-big {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    padding-top: 0px;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .card-info-big {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+@media screen and (max-width: 920px) {
+  .card-info-big {
+    display: none;
+  }
+}
 .card-info-big .center-div {
   width: 730px;
   height: 445px;
@@ -669,6 +831,12 @@ section {
   -webkit-box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
           box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
   border-radius: 10px;
+}
+@media screen and (max-width: 1550px) {
+  .card-info-big .center-div {
+    margin-left: 0px;
+    width: 710px;
+  }
 }
 .card-info-big .center-div .header {
   padding: 13px;
@@ -933,6 +1101,11 @@ section {
   padding-left: 30px;
   padding-top: 30px;
 }
+@media screen and (max-width: 1550px) {
+  .card-info-big .news {
+    padding-left: 0;
+  }
+}
 .card-info-big .news .company-images {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -955,6 +1128,16 @@ section {
   border-left: solid 2px #EDEFF2;
   padding-top: 30px;
 }
+@media screen and (max-width: 1600px) {
+  .Account {
+    width: 290px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .Account {
+    display: none;
+  }
+}
 .Account .headerBox {
   padding-left: 39px;
   padding-right: 40px;
@@ -967,6 +1150,12 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 1600px) {
+  .Account .headerBox {
+    padding-left: 19px;
+    padding-right: 20px;
+  }
 }
 .Account .profile-picture {
   display: -webkit-box;
@@ -1033,6 +1222,12 @@ section {
   padding-right: 32px;
   padding-left: 32px;
 }
+@media screen and (max-width: 1600px) {
+  .Account .accWcards {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .Account .accWcards .accs, .Account .accWcards .carts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1049,6 +1244,11 @@ section {
   font-weight: bold;
   font-family: "Roboto-Font";
   color: #6B7A99;
+}
+@media screen and (max-width: 1366px) {
+  .Account .accWcards .accs p, .Account .accWcards .carts p {
+    font-size: 9px;
+  }
 }
 .Account .accWcards .accs p:last-child, .Account .accWcards .carts p:last-child {
   margin-top: 5px;
@@ -1084,6 +1284,12 @@ section {
   margin-top: 42px;
   padding-right: 32px;
   padding-left: 32px;
+}
+@media screen and (max-width: 1600px) {
+  .Account .setting {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .Account .setting .accs, .Account .setting .accWcards .carts, .Account .accWcards .setting .carts {
   display: -webkit-box;
@@ -1165,6 +1371,11 @@ section {
   border-radius: 10px;
   margin-top: 20px;
   padding-top: 30px;
+}
+@media screen and (max-width: 1600px) {
+  .Account .last .lastbox {
+    width: 200px;
+  }
 }
 .Account .last .lastbox .call {
   display: -webkit-box;
